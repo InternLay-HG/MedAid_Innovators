@@ -1,0 +1,83 @@
+.myClass{
+   font-weight: 700;
+   font-size: 25px;
+   color: rgba(36, 36, 201, 0.897);
+}
+
+.myClass1{
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(14, 13, 13);
+}
+
+.myClass3{
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(14, 13, 13);
+}
+
+.myClass2{
+  background-color: rgb(62, 118, 240); 
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: 1px ;
+  border-radius: 10px;
+  padding-top: 8px;
+}
+ 
+
+.header{
+  width: 82%;
+}
+
+.profileContainer {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profilePic {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 50px; /* Adjust based on icon size */
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.dropdownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu li {
+  padding: 8px;
+  color: #333;
+  text-align: left;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdownMenu a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.dropdownMenu a:hover {
+  text-decoration: underline;
+}

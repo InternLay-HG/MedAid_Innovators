@@ -1,0 +1,13 @@
+for backend:
+
+go to the right directory
+npm init (package name: backend, entry point: server.js)
+npm install express mongoose multer bcrypt cloudinary cors dotenv jsonwebtoken nodemon validator
+
+*** to run the server write : npm run server ***
+
+api endpoint:--
+    for admin login : api/admin/login
+    for adding-doctor/nurse (can only be done if admin is login) : api/admin/add-doctor
+    for patient registaration : api/user/register
+    for patient login : api/user/login

@@ -1,0 +1,66 @@
+.top{
+   text-align: center;
+   font-size: 25px;
+   font-weight: 495;
+   margin-top: 50px;
+   color: rgb(88, 84, 84);
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 180px 40px 150px;
+}
+
+.image{
+  height: 380px;
+  width: 380px;
+}
+
+.para{
+  font-size: 14.45px;
+  font-weight: 450;
+  color: rgb(80, 77, 77);
+}
+
+.bottom{
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(53, 52, 52);
+  margin-left: 150px;
+}
+
+.row{
+  margin: 25px 40px 80px 40px ;
+}
+
+.column{
+  border: 0.01px solid rgb(245, 242, 242);
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.column:hover {
+  background-color:  rgb(95 111 255 );
+  color: white;
+}
+
+.topic{
+  margin-right: 120px;
+  margin-top: 60px;
+
+}
+
+.topic1{
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-weight: 490;
+  font-size: 14.5px;
+}
+.topic3{
+  margin-right: 50px;
+  margin-top: 60px;
+}

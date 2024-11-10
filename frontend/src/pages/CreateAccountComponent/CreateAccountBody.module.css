@@ -1,0 +1,53 @@
+.topform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.formClass{
+  width: 390px;
+}
+
+.form{
+  margin: 40px;
+}
+
+.para1{
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(85, 84, 84);
+}
+
+.para2{
+  font-size: 14.2px;
+  font-weight: 500;
+  color: rgb(105, 102, 102);
+}
+
+.para3{
+  font-size: 14.9px;
+  font-weight: 450;
+  color: rgb(73, 70, 70);
+  margin: 16px 0px 5px 0px;
+}
+
+.input{
+  width: 90%;
+  border: 0.5px solid rgb(207, 202, 202);
+  height: 37px;
+  border-radius: 5px;
+}
+
+.create{
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.createTop{
+  margin: 15px 0px 15px 0px;
+}

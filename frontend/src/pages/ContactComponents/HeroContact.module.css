@@ -1,0 +1,25 @@
+.top{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 495;
+  margin-top: 50px;
+  color: rgb(88, 84, 84);
+}
+
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 50px 40px 250px;
+}
+
+.image{
+  height: 380px;
+  width: 380px;
+}
+
+.para{
+  font-size: 14.95px;
+  font-weight: 450;
+  color: rgb(80, 77, 77);
+}

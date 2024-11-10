@@ -1,0 +1,64 @@
+/* AllDoctors.css */
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.specialty_section {
+    margin-bottom: 30px;
+}
+
+.specialty_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.doctor_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.doctor_card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.doctor_card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.doctor_name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.doctor_specialty {
+    font-size: 16px;
+    color: #777;
+}
+
+.availability_status {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

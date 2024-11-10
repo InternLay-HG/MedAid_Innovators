@@ -1,0 +1,54 @@
+.para1{
+  font-size: 24px;
+  font-weight:500;
+  margin-left: 140px;
+  color: rgb(70, 67, 67);
+}
+
+.img{
+  height: 220px;
+  width: 205px;
+  background-color:rgb(226, 243, 243)
+}
+
+.container1{
+  display: flex;
+  margin-left: 150px;
+  gap: 30px;
+}
+
+.innerContainer1{
+  border: 0.5px solid rgb(224, 219, 219);
+}
+
+.list1{
+  color: rgb(34 197 94);
+  font-size: 1.0rem;
+  margin-bottom: 3px;
+}
+.list2{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.list3{
+  color: rgb(92 92 92 );
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.paraList{
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.centrePara{
+  margin: 55px 0px 25px 150px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.upper{
+  display: flex;
+}

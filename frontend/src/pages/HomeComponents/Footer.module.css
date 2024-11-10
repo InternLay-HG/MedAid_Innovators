@@ -1,0 +1,15 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.base{
+  border-top: 0.2px solid rgb(165, 159, 159);
+  display: flex;
+  justify-content: center;
+  font-weight: 450;
+  font-size: 14px;
+  color: rgb(77, 77, 77);
+}
