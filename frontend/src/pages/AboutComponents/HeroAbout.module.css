@@ -1,66 +1,126 @@
-.top{
-   text-align: center;
-   font-size: 25px;
-   font-weight: 495;
-   margin-top: 50px;
-   color: rgb(88, 84, 84);
+.top {
+  text-align: center;
+  font-size: 1.5rem; 
+  font-weight: 495;
+  margin-top: 50px;
+  color: rgb(88, 84, 84);
 }
 
-.heading{
+.heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 180px 40px 150px;
+  margin: 60px 180px 40px 150px; 
+  flex-wrap: wrap; 
 }
 
-.image{
-  height: 380px;
-  width: 380px;
+.image {
+  height: auto;
+  width: 100%; 
+  max-width: 380px;
 }
 
-.para{
-  font-size: 14.45px;
+.para {
+  font-size: 0.925rem; 
   font-weight: 450;
   color: rgb(80, 77, 77);
 }
 
-.bottom{
-  font-size: 22px;
+.bottom {
+  font-size: 1.375rem;
   font-weight: 500;
   color: rgb(53, 52, 52);
-  margin-left: 150px;
+  margin-left: 125px; 
 }
 
-.row{
-  margin: 25px 40px 80px 40px ;
+.row {
+  margin: 25px 20px 80px 20px; 
 }
 
-.column{
+.column {
   border: 0.01px solid rgb(245, 242, 242);
-  height: 250px;
-  width: 250px;
+  height: auto;
+  width: 100%; 
+  max-width: 300px; 
   border-radius: 10px;
+  margin-bottom: 20px; 
 }
 
 .column:hover {
-  background-color:  rgb(95 111 255 );
+  background-color: rgb(95, 111, 255);
   color: white;
 }
 
-.topic{
+.topic {
   margin-right: 120px;
   margin-top: 60px;
-
 }
 
-.topic1{
+.topic1 {
   text-align: left;
   margin-top: 30px;
   margin-left: 40px;
   font-weight: 490;
-  font-size: 14.5px;
+  font-size: 1rem; 
 }
-.topic3{
+
+.topic3 {
   margin-right: 50px;
   margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .top {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    margin: 40px 10px 20px 10px; 
+  }
+
+  .para {
+    font-size: 0.875rem;
+  }
+
+  .bottom {
+    font-size: 1.125rem;
+    margin-left: 10px; 
+  }
+
+  .topic,
+  .topic3 {
+    margin: 30px 0; 
+  }
+
+  .topic1 {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    font-size: 1rem;
+  }
+
+  .heading {
+    margin: 20px 5px 10px 5px; 
+  }
+
+  .para {
+    font-size: 0.75rem;
+  }
+
+  .bottom {
+    font-size: 1rem;
+    margin-left: 5px; 
+  }
+
+  .topic,
+  .topic3 {
+    margin: 20px 0;
+  }
+
+  .topic1 {
+    font-size: 0.75rem;
+  }
 }

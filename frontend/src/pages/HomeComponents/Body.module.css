@@ -1,27 +1,28 @@
-.container{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 20px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; 
 }
 
-.button5{
+.button5 {
   height: 100px;
   width: 100px;
   border-radius: 50%;
 }
 
-.cont:hover{
+.cont:hover {
   height: 100px;
 }
 
-.image234{
+.image234 {
   height: 100px;
   width: 100px;
 }
 
-.para{
-  font-size: small;
+.para {
+  font-size: 1rem; 
   font-weight: 500;
   color: rgb(80, 77, 77);
   margin-top: 10px;
@@ -29,111 +30,142 @@
   text-decoration: none;
 }
 
-.boxx{
+.boxx {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.innerBox{
-   height: 400px;
-   width: 250px;
+.innerBox {
+  height: 400px;
+  width: 100%; 
+  max-width: 250px; 
 }
 
-.Doctor{
+.Doctor {
   text-align: center;
   margin-top: 60px;
 }
 
-.Doctor1{
-  font-size: 35px;
+.Doctor1 {
+  font-size: 2.2rem;
   font-weight: 650;
   margin-bottom: 10px;
 }
 
-.Doctor2{
-  font-size: small;
+.Doctor2 {
+  font-size: 1rem;
   font-weight: 500;
   color: rgb(80, 77, 77);
 }
 
-.upper{
+.upper {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
 }
 
-.upper1{
-  font-size: 35px;
+.upper1 {
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
-.upper2{
-  font-size: 14px;
+.upper2 {
+  font-size: 1rem;
   font-weight: 500;
   color: rgb(80, 77, 77);
 }
 
-.para1{
+.para1 {
   color: rgb(34 197 94);
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-bottom: 3px;
 }
 
-.para2{
-  font-size: 20px;
+.para2 {
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 3px;
 }
 
-.para3{
-  color: rgb(92 92 92 );
+.para3 {
+  color: rgb(92 92 92);
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-bottom: 8px;
 }
 
-.lower_container{
-  background-color: rgb(95 111 255 );
+.lower_container {
+  background-color: rgb(95 111 255);
   border-radius: 10px;
-  margin: 0px 40px 0px 40px;
+  margin: 0 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.lower_container1{
-   color: white;
-   font-weight: 700;
+.lower_container1 {
+  color: white;
+  font-weight: 700;
+}
+
+.lower_container2 {
+  margin-top: 20px;
+  height: 50px;
+  width: 100%; 
+  max-width: 180px; 
+  border-radius: 20px;
+  border: none;
+  font-weight: 500;
+  color: darkolivegreen;
 }
 
 .lower_container2{
-   margin-top: 20px;
-   height: 50px;
-   width: 180px;
-   border-radius: 20px;
-   border: none;
-   font-weight: 500;
-   color: darkolivegreen;
+  margin-top: 20px;
+  height: 50px;
+  width: 180px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 500;
+  color: darkolivegreen;
 }
 
-.lower_container2:hover{
+.lower_container2:hover {
   margin-top: 17px;
   height: 52px;
   width: 182px;
 }
 
-/* .inner{
-  font-weight: 500;
-  color: darkolivegreen;
-  text-decoration: none;
-} */
-
-.image{
+.image {
   margin-top: 50px;
-  width: 350px;
-  height: 400px; 
+  width: 100%; 
+  max-width: 350px; 
+  height: auto;
 }
 
+@media (max-width: 768px) {
+  .Doctor1,
+  .upper1 {
+    font-size: 1.8rem;
+  }
+
+  .para2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Doctor1,
+  .upper1 {
+    font-size: 1.5rem;
+  }
+
+  .para,
+  .Doctor2,
+  .upper2 {
+    font-size: 0.875rem;
+  }
+}

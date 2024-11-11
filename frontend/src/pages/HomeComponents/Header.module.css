@@ -38,14 +38,14 @@
 }
 
 .profilePic {
-  width: 40px; /* Adjust size as needed */
+  width: 40px; 
   height: 40px;
   border-radius: 50%;
 }
 
 .dropdownMenu {
   position: absolute;
-  top: 50px; /* Adjust based on icon size */
+  top: 50px; 
   right: 0;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

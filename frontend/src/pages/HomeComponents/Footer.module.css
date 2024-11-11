@@ -1,15 +1,43 @@
-.footer{
+
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  gap: 120px; 
+  flex-wrap: wrap; 
+  padding: 10px;
 }
 
-.base{
+.base {
   border-top: 0.2px solid rgb(165, 159, 159);
   display: flex;
   justify-content: center;
   font-weight: 450;
-  font-size: 14px;
+  font-size: 1rem; 
   color: rgb(77, 77, 77);
+  text-align: center; 
+  width: 100%; 
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    gap: 10px;
+    padding: 20px; 
+  }
+
+  .base {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    gap: 5px;
+    padding: 15px; 
+  }
+
+  .base {
+    font-size: 0.75rem; 
+  }
 }
