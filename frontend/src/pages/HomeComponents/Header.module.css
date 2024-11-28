@@ -19,7 +19,8 @@
 .myClass2{
   background-color: rgb(62, 118, 240); 
   color: white;
-  width: 150px;
+  
+  width: 125px;
   height: 40px;
   border: 1px ;
   border-radius: 10px;
