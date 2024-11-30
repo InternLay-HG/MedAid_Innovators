@@ -16,21 +16,26 @@
    }
 
 
+
+
   .profile_header {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap; 
-    gap: 20px; 
+    flex-direction: column; /* Align elements vertically */
+    align-items: center; /* Center the profile image horizontally */
+    justify-content: center; /* Center the content vertically */
     margin-bottom: 40px;
-  }
-  
-  .profile_image {
-    width: 81%; 
-    max-width: 80px; 
-    height: auto; 
-    border-radius: 50%;
-    background-color: #e0e0e0;
-  }
+}
+
+.profile_image {
+    width: 150px; /* Increase the size of the image */
+    height: 150px; /* Ensure it remains square */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image scales properly */
+    border: 4px solid #3b82f6; /* Add a border for a clean look */
+    background-color: #e0e0e0; /* Fallback background color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
   
   h2 {
     font-size: 1.875rem; 
@@ -135,4 +140,46 @@ background-color: #4a90e2;
 .labReportsButton:active {
   transform: translateY(0); /* Reset button to original position */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.patient_link {
+  color: #ff0077; /* Vibrant blue for better visibility */
+  text-decoration: none; /* Clean look */
+  font-weight: 600; /* Slightly bolder for emphasis */
+  padding: 2px 4px; /* Adds some padding for better clickability */
+  border-radius: 4px; /* Rounded corners for hover background */
+  background-color: transparent; /* Transparent background by default */
+  transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+}
+
+.patient_link:hover {
+  color: #ffffff; /* White text on hover */
+  background-color: #0077ff; /* Blue background for hover effect */
+  text-decoration: none; /* Maintain no underline on hover */
+  box-shadow: 0 2px 8px rgba(0, 119, 255, 0.3); /* Subtle shadow for a 3D effect */
+}
+
+.patient_link:focus {
+  outline: 2px dashed #0077ff; /* Accessible focus outline */
+  outline-offset: 2px; /* Space between link and outline */
+}
+
+.spinner {
+  border: 4px solid #e5e5e5;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

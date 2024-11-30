@@ -85,41 +85,44 @@ const PatientPageForAppointment = () => {
           )}
       </div>
 
+
+
       <div className={styles.booking_section}>
-          <h3>Booking slots</h3>
-          
-          {doctorData && doctorData.available_slots.length > 0 ? (
-              <>
-                  <div className={styles.date_selector}>
-                      {doctorData.available_slots.map((slot, index) => (
-                          <button
-                              key={index}
-                              className={`date-button ${selectedDate === slot.day ? 'selected' : ''}`}
-                              onClick={() => handleDateClick(slot.day)}
-                          >
-                              {slot.day}
-                          </button>
-                      ))}
-                  </div>
-                  
-                  <div className={styles.time_selector}>
-                      {selectedDate &&
-                          doctorData.available_slots
-                              .find((slot) => slot.day === selectedDate)
-                              ?.time?.split(',').map((time, index) => (
-                                  <button
-                                      key={index}
-                                      className={`time-button ${selectedTime === time ? 'selected' : ''}`}
-                                      onClick={() => handleTimeClick(time)}
-                                  >
-                                      {time}
-                                  </button>
-                              ))}
-                  </div>
-              </>
-          ) : (
-              <p>No available slots</p>
-          )}
+    <h3>Booking slots</h3>
+    
+    {doctorData && doctorData.available_slots.length > 0 ? (
+        <>
+            <div className={styles.date_selector}>
+                {doctorData.available_slots.map((slot, index) => (
+                    <button
+                        key={index}
+                        className={`${styles.date_button} ${selectedDate === slot.day ? styles.selected : ''}`}
+                        onClick={() => handleDateClick(slot.day)}
+                    >
+                        {slot.day}
+                    </button>
+                ))}
+            </div>
+            
+            <div className={styles.time_selector}>
+                {selectedDate &&
+                    doctorData.available_slots
+                        .find((slot) => slot.day === selectedDate)
+                        ?.time?.split(',').map((time, index) => (
+                            <button
+                                key={index}
+                                className={`${styles.time_button} ${selectedTime === time ? styles.selected : ''}`}
+                                onClick={() => handleTimeClick(time)}
+                            >
+                                {time}
+                            </button>
+                        ))}
+            </div>
+        </>
+    ) : (
+        <p>No available slots</p>
+    )}
+
 
           <button className={styles.book_appointment} onClick={handleAppointmentBooking}>
               Book an appointment

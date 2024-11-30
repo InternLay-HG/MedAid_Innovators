@@ -40,6 +40,7 @@ const PatientProfile = () => {
       return <div>Loading...</div>;
     }
   
+
     return (
       <div className={styles.profile_container}>
         <div className={styles.profile_header}>
@@ -50,8 +51,9 @@ const PatientProfile = () => {
            />
         </div>
 
+
         <div className={styles.profile_section}>
-          <h3>Contact Information</h3>
+          <h3>Lab Reports</h3>
           <button
             className={styles.labReportsButton}
             onClick={() => setShowLabReports(true)}

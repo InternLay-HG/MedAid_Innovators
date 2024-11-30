@@ -5,9 +5,12 @@ import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import styles from "./PatientProfile.module.css"
 
+
+
 const ManageAppointments = () => {
   const { dToken, backendUrl } = useContext(DoctorContext);
   const [appointments, setAppointments] = useState([]);
+  const [loading, setLoading] = useState(true); // New loading state
 
   const fetchAppointments = async () => {
     try {
@@ -15,9 +18,12 @@ const ManageAppointments = () => {
         headers: { 'auth-token': dToken },
       });
       setAppointments(response.data.appointments);
+      setLoading(false); // Set loading to false once data is fetched
     } catch (error) {
+
       console.error('Error fetching appointments:', error);
       toast.error('Failed to fetch appointments');
+      setLoading(false); // Set loading to false once data is fetched
     }
   };
 
@@ -43,6 +49,16 @@ const ManageAppointments = () => {
     }
   };
 
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-20">
+        <div className={styles.spinner}></div>
+        <p className="ml-4">Loading appointments...</p>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.upper}>
       <h2 className={`${styles.upper1} text-xl font-semibold mb-4`}>Manage Appointments</h2>
@@ -57,9 +73,11 @@ const ManageAppointments = () => {
           </tr>
         </thead>
         <tbody>
+
+
           {appointments.map((appointment) => (
             <tr key={appointment._id}>
-              <td className="py-2 px-4 border-b"><Link to={`/patientData/${appointment.patientId._id}`} className="text-blue-500 underline">
+              <td className="py-2 px-4 border-b"><Link to={`/patientData/${appointment.patientId._id}`} className={styles.patient_link} title="Click to View Patient Details" >
                   {appointment.patientName}
                 </Link></td>
               <td className="py-2 px-4 border-b">{appointment.day}</td>

@@ -64,7 +64,9 @@
     margin-bottom: 25px;
 }
 
-.time-button, .date-button{
+
+
+.time_button, .date_button{
     padding: 8px 12px;
     border: 1px solid #1eb82b; 
     font-size: 1.875rem; 
